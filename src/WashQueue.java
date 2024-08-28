@@ -7,7 +7,7 @@ public class WashQueue {
 
     public void addCar(Car car){
         Node newNode = new Node(car);
-        if(this.rear == null){
+        if(isEmpty()){
             this.front = newNode;
             this.rear = newNode;
         }else{
